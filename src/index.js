@@ -68,7 +68,7 @@ io.on('connection', (socket) => {
     })
 
 })
-
-server.listen(port, () => {
+const host= "0.0.0.0" || "localhost";
+server.listen(port,host, () => {
     console.log(`Connected to ${port}`)
 })
